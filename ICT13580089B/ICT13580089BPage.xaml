@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:ICT13580089B"
+    x:Class="ICT13580089B.ICT13580089BPage"
+    BackgroundColor="Teal"
+    Padding="10,20,30,40">
+
+
+
+    <ScrollView>
+    <StackLayout
+        BackgroundColor="#524556"
+        Orientation="Vertical">
+        <Label
+            Text="Hello world"
+            BackgroundColor="Gray"
+            LineBreakMode="WordWrap"
+            x:Name="firsNameLabel" />
+        <Label
+            Text="sujinun raephet"
+            BackgroundColor="White"
+            x:Name="lastNameLabel" />
+        <Entry
+            Placeholder="กรุณากรอกชื่อ"
+            Keyboard="Text"
+            x:Name="firsNameEntry" />
+        <Button
+            Text="OK"
+            BackgroundColor="Silver"
+            x:Name="okbutton" />
+        <DatePicker />
+        <TimePicker />
+        <Picker
+            x:Name="genderPicker"
+            Title="กรุณาเลือกเพศ" />
+        <Label
+            x:Name="valueLabel" />
+        <Slider
+            Maximum="100"
+            Minimum="0"
+            Value="50"
+            x:Name="mySlider" />
+        <Stepper
+            x:Name="myStepper"
+            Maximum="12"
+            Minimum="0"
+            Value="0"
+            Increment="1" />
+        <Switch
+            IsToggled="true" />
+        <Image
+            Source="222.jpg"
+            HeightRequest="80" />
+        <WebView
+            HeightRequest="500"
+            Source="https://www.youtube.com/watch?v=EVaV7AwqBWg" />
+        
+    </StackLayout>
+
+
+</ScrollView>
+    
+</ContentPage>
